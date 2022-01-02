@@ -11,17 +11,13 @@ public class Main {
             int coordY1 = 150;
             int coordX2 = 100;
             int coordY2 = 100;
-            int coordX3 = 170;
-            int coordY3 = 190;
-            int coordX4 = 200;
-            int coordY4 = 210;
-            int coordX5 = 220;
-            int coordY5 = 250;
+            int coordX3 = 230;
+            int coordY3 = 210;
 
             try {
                 Robot robby = new Robot();
                 //moves your cursor every quarter second 11 times
-                for (int j = 0; j < 11; j++) {
+                for (int j = 0; j < 16; j++) {
                     System.out.println("J: " + j);
                     robby.mouseMove(coordX1, coordY1);
                     TimeUnit.MILLISECONDS.sleep(250);
@@ -29,9 +25,6 @@ public class Main {
                     TimeUnit.MILLISECONDS.sleep(250);
                     robby.mouseMove(coordX3, coordY3);
                     TimeUnit.MILLISECONDS.sleep(250);
-                    robby.mouseMove(coordX4, coordY4);
-                    TimeUnit.MILLISECONDS.sleep(250);
-                    robby.mouseMove(coordX5, coordY5);
                 }
             } catch (AWTException e) {
                 e.printStackTrace();
